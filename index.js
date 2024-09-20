@@ -40,17 +40,14 @@ $(function(){
     hide_fun()
     //是否播放
     play_fun()
-    //上一首
-    previous_fun()
-    //下一首
-    //next_fun()
+    
 
 
     //获取索引
     li.click(function(){
         console.log($(this).index());
-        index = $(this).index()
-        $('.pause').attr({'src':'./pic/pause.png','title':'暂停'})
+        index = $(this).index();
+        $('.pause').attr({'src':'./pic/pause.png','title':'暂停'});
         show();
     });
 
@@ -61,8 +58,6 @@ $(function(){
         change_title()
         //改变播放时的图像
         change_head()
-        
-
     };
     
     function play_mp3(){
@@ -113,6 +108,23 @@ $(function(){
             }
         })
     }
+
+    //上一首
+    previos.click(function(){
+        index--;
+        if(index<0){
+            index = li.length-1;
+        }
+        show()
+    })
+    //下一首
+    next.click(function(){
+        index++;
+        if(index>li.length-1){
+            index = 0;
+        }
+        show();
+    })
 
 });
 
