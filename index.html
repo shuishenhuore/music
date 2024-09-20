@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>听听音乐吧</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="jquery.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
-    
+    <video autoplay muted loop src="video/banner.mp4"></video>
+    <header>music</header>
+    <div id="tool">
+        <div class="pic_title">
+            <li><img class="head" src="./head/单车_陈奕迅.png"></li>
+            <li class="title">单车_陈奕迅</li>
+        </div>
+        <div class="tool">
+            <li class="previous"><img src="./pic/previous-1.png" title="上一首"></li>
+            <li class="paly_pause"><img class="pause" src="./pic/play.png" title="播放"></li>
+            <li class="next"><img src="./pic/next-1.png" title="下一首"></li>
+        </div>
+        <div id="hide"><img class="arrows" src="./pic/左箭头.png" title="收起"></div>
+    </div>
+    <div id="content">
+        <ul>
+            <li>单车_陈奕迅</li>
+            <li>她说_林俊杰</li>
+            <li>悬溺_葛东琪</li>
+            <li>愿与愁_林俊杰</li>
+            <li>牧马城市_毛不易</li>
+            <li>黑月光_张碧晨,毛不易</li>
+            <li>泪桥_陶喆</li>
+            <li>雨天_汪苏泷</li>
+            <li>见信如晤_毛不易,单依纯</li>
+            <audio class="audio"  src="./datasrc/愿与愁_林俊杰.flac"></audio>
+           
+            
+        </ul>
+    </div>
 </body>
 </html>
