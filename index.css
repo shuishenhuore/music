@@ -1,3 +1,11 @@
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
 body,
 html {
   height: 100%;
@@ -29,39 +37,59 @@ header {
   left: 0px;
   height: 150px;
   width: 500px;
-  background-color: rgba(254, 254, 254, 0.4);
   z-index: 1;
+  background-color: rgba(254, 254, 254, 0.4);
 }
-#tool #note {
+#tool .info {
   position: relative;
-  top: -350px;
-  left: 500px;
+  left: 10px;
+  top: 25px;
 }
-#tool .pic_title {
+#tool .info .head {
+  height: 90px;
+  width: 90px;
+  border-radius: 90px;
+  animation: rotate 2s linear infinite;
+  animation-play-state: paused;
+}
+#tool .info .title {
   position: absolute;
-  left: 15px;
-  top: 45px;
+  top: 30px;
+  left: 120px;
+  font-size: 20px;
 }
-#tool .pic_title li {
-  float: left;
-  list-style-type: none;
+#tool .info .time_progress {
+  position: absolute;
+  top: 40px;
+  left: 120px;
+}
+#tool .info .time {
+  position: absolute;
+  top: 35px;
   padding-right: 20px;
 }
-#tool .pic_title :first-child {
-  height: 60px;
-  width: 60px;
+#tool .info .duration {
+  position: absolute;
+  top: 35px;
+  left: 155px;
 }
-#tool .pic_title :last-child {
-  line-height: 55px;
-  font-size: 20px;
-  color: black;
-  cursor: pointer;
+#tool .info .progressContainer {
+  position: absolute;
+  top: 30px;
+  height: 5px;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#tool .info .progressLine {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, orange, yellow);
 }
 #tool .tool {
   list-style-type: none;
-  position: absolute;
-  left: 340px;
-  top: 60px;
+  position: relative;
+  left: 350px;
+  top: -35px;
 }
 #tool .tool li {
   float: left;
