@@ -91,17 +91,25 @@ $(function(){
             $('#content ul').append(li)
         })
     }
+    //音乐列表事件委托
+    $('#content ul').on('click','li',function(){
+        currentIndex = $(this).index()-1;
+        render(musicList[currentIndex])
+        $('audio')[0].play();
+        $('.pause').attr({'src':'./pic/pause.png','title':'暂停'})
+        $('.head').css('animation-play-state','running')
+    })
     //隐藏工具栏
     $('#hide').click(function(){
         if(hide){
             //隐藏
             $('.arrows').attr({'src':'./pic/左箭头.png','title':'收起'})
-            $('#tool').animate({'left':'0px'},800)
+            $('#tool').css({'animation':'right 0.8s linear','animation-fill-mode': 'forwards'})
             hide=false;
         }else{
             //没隐藏
             $('.arrows').attr({'src':'./pic/右箭头.png','title':'展开'})
-            $('#tool').animate({'left':'-470px'},800)
+            $('#tool').css({'animation':'left 0.8s linear','animation-fill-mode': 'forwards'})
             hide=true;
         }
     })

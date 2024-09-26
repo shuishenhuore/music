@@ -2,11 +2,24 @@
     0%{rotate:0deg}
     100%{rotate:360deg}
 }
+@keyframes left {
+    0%{transform:translateX(0px)}
+    100%{transform:translateX(-470px)}
+}
+@keyframes right {
+    0%{left:-475px}
+    100%{left:0px}
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 body,html{
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
-
 video{
     height: 100%;
     width: 100%;
@@ -26,6 +39,7 @@ header{
     color: white;
     letter-spacing: 20px;
     font-family:Georgia, serif;
+    cursor: pointer;
 }
 #tool{
     position: fixed;
@@ -116,16 +130,21 @@ header{
 }
 
 #content{
-    background: rgba(62, 114, 170,0.5);
-    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
     width: 100%;
     position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     :first-child{
         padding-top: 50px;
     }
+    :last-child{
+        padding-bottom: 50px;
+    }
     li{
-        font-family: kaiti;
+        font-family:kaiti,Georgia, 'Times New Roman', Times, serif;
         font-size: 40px;
+        color: white;
         list-style-type: none;
         text-align: center;
         cursor: pointer;

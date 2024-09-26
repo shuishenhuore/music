@@ -61,6 +61,40 @@
         "singer":"林俊杰",
         "head":"./head/愿与愁_林俊杰.png",
         "time":"03:51"
+    },
+    {
+        "name":"小幸运",
+        "audio_url":"./music/小幸运_田馥甄.flac",
+        "singer":"小幸运_田馥甄",
+        "head":"./head/小幸运_田馥甄.png",
+        "time":"04:25"
+    },
+    {
+        "name":"醉千年",
+        "audio_url":"./music/醉千年_李袁杰,李俊佑.flac",
+        "singer":"李袁杰,李俊佑",
+        "head":"./head/醉千年_李袁杰,李俊佑.png",
+        "time":"03:40"
+    },
+    {
+        "name":"青花",
+        "audio_url":"./music/青花(Live)_周传雄.mp3",
+        "singer":"周传雄",
+        "head":"./head/青花(Live)_周传雄.png",
+        "time":"04:59"
+    },
+    {
+        "name":"寂寞烟火",
+        "audio_url":"./music/寂寞烟火_朱婧汐.flac",
+        "singer":"朱婧汐",
+        "head":"./head/寂寞烟火_朱婧汐Akini Jing.png",
+        "time":"04:32"
+    },
+    {
+        "name":"情歌",
+        "audio_url":"./music/情歌.mp3",
+        "singer":"别",
+        "head":"./head/别.jpg",
+        "time":"01:44"
     }
-
 ]
